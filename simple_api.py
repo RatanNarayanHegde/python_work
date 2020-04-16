@@ -24,6 +24,6 @@ for res_item_dic in res_items_dic:
 my_style = LS('#333366', base_style=LCS)
 chart = pygal.Bar(style=my_style, x_label_rotation=45, show_legend=False)
 chart.title="Most starred repositories in github"
-chart.x_label=names
+chart.x_labels=names
 chart.add('',stars)
 chart.render_to_file("python_repo.svg")
